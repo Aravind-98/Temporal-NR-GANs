@@ -6,6 +6,8 @@ This repository contains all the code and materials requires for the ML term pap
 * All of us must compulsarily be thorough with the NR-GAN paper. We will discuss this saturday on the other papers that we must read and split up the tasks. Kamlesh expects equal contribution from all members, which will be explained during the viva which comes later on. So we must work seriously.
 * After the Literature Review is done on **Sept 27**, we will focus heavily on implementation.
 
+If you are new to markdown, don't worry it's damn simple-use this link [MARKDOWN reference](https://www.markdownguide.org/basic-syntax/)
+
 
 ## Useful links
 * https://www.youtube.com/watch?v=RRTuumxm3CE&list=PLdxQ7SoCLQAMGgQAIAcyRevM8VvygTpCu
