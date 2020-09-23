@@ -13,7 +13,7 @@ If you are new to markdown, don't worry it's damn simple-use this link [MARKDOWN
 * https://www.youtube.com/watch?v=RRTuumxm3CE&list=PLdxQ7SoCLQAMGgQAIAcyRevM8VvygTpCu
 * https://www.youtube.com/watch?v=U0R5i8o_d40
 
-# Literature Review by Aravindan
+
 ---
 * [PAPER: Noise Robust GANS](https://openaccess.thecvf.com/content_CVPR_2020/papers/Kaneko_Noise_Robust_Generative_Adversarial_Networks_CVPR_2020_paper.pdf)
 
