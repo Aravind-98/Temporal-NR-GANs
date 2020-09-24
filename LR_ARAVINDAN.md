@@ -47,5 +47,31 @@ Write equations **4(1)**
 **GET THE ARCHITECTURE**
 
 ---
+The primary limitation of AmbientGANS is that it requires that a noise simulation model $Fθ(x)$ is known in prior. [Kaneko,Harada] avoid this by introducing a noise generator and train it along with a clean image generator.
+
+**Eqn 5(2)**
+They provide constraints to capture only the noise specific components
+
+## Signal Independent NR-GANS
+> These models expect 3 assumptions to hold, namely
+> 1. The noise n is conditionally pixel-wise independent given the signal x. 
+> 2. The noise distribution type (e.g., Gaussian) is priorly known. Note that the noise amount needs not to be known.
+> 3. The signal x does not follow the defined noise distribution.
+
+regularize the output distribution of Gn in a pixel-wise manner using a reparameterization trick [40]
+ introduce an auxiliary pixel-wise random variable.
+__5(3)__
+
+Therefore, the same model can be applied to various noises (e.g., Figure 2(A)–(D), in which
+each pixel’s noise follows a Gaussian distribution, while
+the noise amount is different in a sample-wise (e.g., (B))
+or pixel-wise (e.g., (D)) manner).
+
+> Limitations
+> 1. the noise is pixel-wise independent - difficult to apply to a pixel-wise correlated noise
+> 2. the noise distribution type is pre-defined - cause difficulty when diverse noises are mixed or the noise distribution type is different from the pre-defined
+
+
+
 
 
