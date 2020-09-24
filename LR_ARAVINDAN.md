@@ -52,7 +52,7 @@ The primary limitation of AmbientGANS is that it requires that a noise simulatio
 **Eqn 5(2)**
 They provide constraints to capture only the noise specific components
 
-## Signal Independent NR-GANS
+## Signal Independent NR-GANS-I
 > These models expect 3 assumptions to hold, namely
 > 1. The noise n is conditionally pixel-wise independent given the signal x. 
 > 2. The noise distribution type (e.g., Gaussian) is priorly known. Note that the noise amount needs not to be known.
@@ -72,6 +72,16 @@ or pixel-wise (e.g., (D)) manner).
 > 2. the noise distribution type is pre-defined - cause difficulty when diverse noises are mixed or the noise distribution type is different from the pre-defined
 
 
+## Signal Independent NR-GANS-II
+Overcomes limitations of __SI-NRGAN-I__
+> This model too makes a few assumptions - Both the noise n and signal x must be rotation, channel, color-inverse invariant.
+> These assumptions are reasonable when n is a zero-mean signal-independent noise
+and x is a natural image.
 
+The noise generator is redefined by taking the initial noise generator and applying a transformation to it. The authors state that it must be applicable to n but not to x.
+In practice, we use three transformations: (i) rotation – rotating nˆ by d ∈ {0, 90◦, 180◦, 270◦} randomly,
+(ii) channel shuffle – shuffling RGB channels randomly,
+and (iii) color inversion – inverting colors randomly in a
+channel-wise manner. 
 
 
